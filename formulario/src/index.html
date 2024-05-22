@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro de Proveedor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Formulario de Registro de Proveedor</h2>
+    <form id="formularioProveedor">
+      <div class="form-group">
+        <label for="tipoPersona">Personería Jurídica:</label>
+        <select class="form-control" id="tipoPersona" name="tipoPersona" required>
+          <option value="">Seleccione...</option>
+          <option value="personaNatural">Persona Natural</option>
+          <option value="personaJuridica">Persona Jurídica</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nit">NIT o RUT:</label>
+        <input type="text" class="form-control" id="nit" name="nit" required>
+      </div>
+      <div class="form-group">
+        <label for="razonSocial">Nombre de la Razón Social:</label>
+        <input type="text" class="form-control" id="razonSocial" name="razonSocial" required>
+      </div>
+      <!-- Otros campos del formulario -->
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+
+
+  <form>
+    <div>
+      <label htmlFor="tipoPersona">Personería Jurídica:</label>
+      <select id="tipoPersona" name="tipoPersona">
+        <option value="natural">Persona Natural</option>
+        <option value="juridica">Persona Jurídica</option>
+      </select>
+    </div>
+    <div>
+      <label htmlFor="nitRut">Nit o RUT:</label>
+      <input type="text" id="nitRut" name="nitRut" required />
+    </div>
+    <div>
+      <label htmlFor="razonSocial">Nombre de la Razón Social:</label>
+      <input type="text" id="razonSocial" name="razonSocial" required />
+    </div>
+    <div>
+      <label htmlFor="representanteLegal">Nombre del Representante Legal:</label>
+      <input type="text" id="representanteLegal" name="representanteLegal" required />
+    </div>
+    <div>
+      <label htmlFor="telefono">Teléfono de Contacto:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+    </div>
+    <div>
+      <label htmlFor="email">Email de Contacto:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+    <div>
+      <label htmlFor="ciudad">Ciudad:</label>
+      <input type="text" id="ciudad" name="ciudad" required />
+    </div>
+    <div>
+      <label htmlFor="pais">País:</label>
+      <select id="pais" name="pais" required>
+        <option value="colombia">Colombia</option>
+        <!-- Agrega aquí las opciones de otros países -->
+      </select>
+    </div>
+    <div>
+      <label htmlFor="departamento">Departamento:</label>
+      <select id="departamento" name="departamento" required>
+        <option value="antioquia">Antioquia</option>
+        <!-- Agrega aquí las opciones de otros departamentos -->
+      </select>
+    </div>
+    <div>
+      <label htmlFor="direccion">Dirección:</label>
+      <textarea id="direccion" name="direccion" rows="4" required></textarea>
+    </div>
+    <div>
+      <label htmlFor="rut">Cargar RUT (PDF):</label>
+      <input type="file" id="rut" name="rut" accept=".pdf" required />
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  </form>
+  
+
+  <script src="main.js"></script>
+
+
+
+
+</body>
+</html>
